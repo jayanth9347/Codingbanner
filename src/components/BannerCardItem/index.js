@@ -1,14 +1,15 @@
-import '/index.css'
+import './index.css'
 
 const UserProfile = props => {
-  const {headerText, description, className} = props
+  const {bannerCardsList} = props
+  const {headerText, description, className} = bannerCardsList
   const container = {className}
 
   return (
-    <div className={container}>
+    <li className={container}>
       <h1> {headerText} </h1>
       <p> {description} </p>
-    </div>
+    </li>
   )
 }
 

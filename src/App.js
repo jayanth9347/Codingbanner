@@ -26,9 +26,16 @@ const bannerCardsList = [
 
 const App = () => (
   <div>
+  <li>
     {bannerCardsList.map(each => (
-      <UserProfile bannerCardsList={each} key={each.id} />
+      <UserProfile
+        className={each.className}
+        bannerCardsList={each}
+        key={each.id}
+      />
     ))}
+  </li>
+  <button> Show More </button>
   </div>
 )
 
